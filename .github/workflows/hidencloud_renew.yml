@@ -3,7 +3,7 @@ name: HidenCloud Auto Renew
 on:
   schedule:
     # 每天北京时间早上 9 点运行 (UTC 1:00)
-    - cron: '0 1 * * *'
+    - cron: '0 1 * * 1'
   workflow_dispatch: # 允许手动运行
 
 # 防止多个任务同时运行导致更新 Secret 冲突
